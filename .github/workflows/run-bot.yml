@@ -7,6 +7,6 @@ on:
 
 jobs:
   call-bot:
-    uses: your-username/your-repo/.github/workflows/repo-security-bot.yml@main
+    uses: arinagrawal05/repo-security-bot/.github/workflows/repo-security-bot.yml@main
     secrets:
       SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
