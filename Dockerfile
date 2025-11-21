@@ -28,8 +28,7 @@ RUN apt-get upgrade -y # (DKL-DI-0002: Do not use 'upgrade')
 
 # 7. Installing 'sudo' (DKL-DI-0001)
 # 8. Installing 'ssh' and exposing port 22 (CIS-DI-0008)
-EXPOSE 22
-EXPOSE 80
+EXPOSE 8080
 
 # 9. Creating a private key inside the image (DKL-DI-0008)
 RUN mkdir -p /root/.ssh/
