@@ -9,4 +9,4 @@ jobs:
   call-bot:
     uses: arinagrawal05/repo-security-bot/.github/workflows/repo-security-bot.yml@main
     secrets:
-      SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+      SNYK_TOKEN: ${{ secrets.GITHUB_TOKEN }}
