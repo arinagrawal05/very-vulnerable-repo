@@ -5,8 +5,6 @@ on:
     branches: [ main ]
   pull_request:
 
-# ⚠️ FIX 1: Grant permissions to this "Caller" workflow
-# It needs these rights so it can pass them down to the bot.
 permissions:
   contents: read
   issues: write
@@ -18,6 +16,4 @@ jobs:
   call-bot:
     uses: arinagrawal05/repo-security-bot/.github/workflows/repo-security-bot.yml@main
     
-    # ⚠️ FIX 2: Use 'inherit' to pass GITHUB_TOKEN automatically
-    # We removed the specific 'SNYK_TOKEN' line because the child workflow doesn't use it.
     secrets: inherit
